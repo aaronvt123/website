@@ -150,7 +150,7 @@ const App: React.FC = () => {
         {/* 3. EPS Theory */}
         <section id="theory" className="min-h-screen py-20">
           <div className="max-w-6xl mx-auto">
-            <h2 className="text-4xl font-bold font-mono text-white mb-16 text-center"><span className="text-neon-blue">02.</span> What is the EPS?</h2>
+            <h2 className="text-4xl font-bold font-mono text-white mb-16 text-center">What is the EPS?</h2>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div className="space-y-8">
@@ -222,7 +222,7 @@ const App: React.FC = () => {
         <section id="architecture" className="min-h-screen py-20 bg-space-800/30">
           <div className="max-w-7xl mx-auto">
              <div className="text-center mb-12">
-                <h2 className="text-4xl font-bold font-mono text-white mb-4"><span className="text-neon-green">03.</span> System Architecture</h2>
+                <h2 className="text-4xl font-bold font-mono text-white mb-4">System Architecture</h2>
                 <p className="text-gray-400">Detailed component selection and topology.</p>
              </div>
 

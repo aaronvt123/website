@@ -70,42 +70,6 @@ const PowerCharts: React.FC = () => {
           </div>
         </div>
       </div>
-
-      {/* Power Budget Table */}
-      <div className="glass-panel p-6 rounded-xl overflow-hidden">
-        <h3 className="text-lg font-mono text-neon-blue mb-4 text-center">Detailed Power Budget Table</h3>
-        <div className="overflow-x-auto">
-          <table className="min-w-full text-sm text-left text-gray-300">
-            <thead className="text-xs text-gray-400 uppercase bg-white/5 font-mono">
-              <tr>
-                <th scope="col" className="px-6 py-3">Subsystem</th>
-                <th scope="col" className="px-6 py-3 text-right">Power (W)</th>
-                <th scope="col" className="px-6 py-3 text-right">Duty Cycle</th>
-                <th scope="col" className="px-6 py-3 text-right">Avg Consumption (Wh/Orbit)</th>
-              </tr>
-            </thead>
-            <tbody>
-              {POWER_DISTRIBUTION.map((item, index) => (
-                <tr key={index} className="border-b border-white/5 hover:bg-white/5 transition-colors">
-                  <td className="px-6 py-4 font-medium text-white flex items-center gap-2">
-                    <span className="w-3 h-3 rounded-full" style={{ backgroundColor: item.color }}></span>
-                    {item.subsystem}
-                  </td>
-                  <td className="px-6 py-4 text-right">{item.consumption.toFixed(2)}</td>
-                  <td className="px-6 py-4 text-right">0%</td>
-                  <td className="px-6 py-4 text-right">{(item.consumption * 1.5).toFixed(2)}</td>
-                </tr>
-              ))}
-              <tr className="bg-white/10 font-bold text-white border-t-2 border-neon-blue">
-                <td className="px-6 py-4">TOTAL PEAK LOAD</td>
-                <td className="px-6 py-4 text-right">0.00</td>
-                <td className="px-6 py-4 text-right">-</td>
-                <td className="px-6 py-4 text-right">0.00</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </div>
     </div>
   );
 };
